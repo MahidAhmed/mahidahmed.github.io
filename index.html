@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahid Ahmed — Personal Site</title>
+  <meta name="description" content="Personal academic homepage" />
+  <style>
+    :root {
+      --bg: #0f172a;          /* slate-900 */
+      --fg: #0b1220;          /* dark overlay for image */
+      --card: rgba(255,255,255,0.82);
+      --text: #1f2937;        /* gray-800 */
+      --muted: #6b7280;       /* gray-500 */
+      --accent: #2563eb;      /* blue-600 */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--text); }
+
+    /* ================= Hero ================= */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+    .hero::before { /* background image */
+      content: "";
+      position: absolute; inset: 0;
+      background-image: url('https://unsplash.com/photos/gray-concrete-bricks-painted-in-blue-QMDap1TAu0g');
+      background-size: cover; background-position: center;
+      transform: scale(1.02);
+      filter: saturate(1.05) brightness(0.85);
+    }
+    .hero::after { /* subtle overlay */
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(1200px 600px at 50% 30%, transparent 10%, rgba(0,0,0,0.3) 70%), linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.45));
+    }
+
+    /* ================= Card ================= */
+    .card {
+      position: relative; z-index: 1;
+      width: min(1100px, 92vw);
+      margin: 6vh auto;
+      padding: clamp(16px, 3.5vw, 36px) clamp(18px, 4vw, 42px);
+      background: var(--card);
+      backdrop-filter: blur(8px);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    /* ================= Heading ================= */
+    .name { margin: 18px 0 6px; font-size: clamp(44px, 8vw, 96px); letter-spacing: 0.5px; font-weight: 300; color: #3b3b3b; }
+    .name strong { font-weight: 700; color: #777; }
+    .tagline { margin: 6px 0 22px; font-size: clamp(16px, 2.2vw, 24px); color: #333; }
+
+    /* ================= Links Row ================= */
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: clamp(12px, 2vw, 20px);
+      align-items: start;
+      justify-items: center;
+      margin-top: clamp(14px, 2vw, 28px);
+    }
+    .linkcard { display: grid; justify-items: center; gap: 8px; padding: 12px 6px; border-radius: 14px; transition: transform 160ms ease, background 160ms ease; text-decoration: none; color: inherit; }
+    .linkcard:hover { transform: translateY(-3px); background: rgba(255,255,255,0.6); }
+    .linkcard img, .linkcard svg { width: 52px; height: 52px; border-radius: 10px; display: block; }
+    .label { font-size: 18px; font-style: italic; text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Footer */
+    footer { position: relative; z-index: 1; text-align: center; color: #e5e7eb; font-size: 14px; margin: 16px 0 28px; }
+    footer a { color: #e5e7eb; }
+
+    /* Small screens tweak */
+    @media (max-width: 520px) {
+      .label { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <section class="card">
+      <!-- Replace the name and role below with yours -->
+      <h1 class="name"><strong>Mahid Ahmed</strong></h1>
+      <p class="tagline"> Ph.D. Student — Computer Science, University of Southern Mississippi</p>
+
+      <!-- QUICK INSTRUCTIONS (remove once customized):
+           1) Swap the background photo by editing the URL in .hero::before above.
+           2) Update the name + tagline.
+           3) Replace href="#" with your real links.
+           4) If you want to host local icons, save PNG/SVGs in /assets and update src="assets/...". -->
+
+      <nav class="links">
+        <a class="linkcard" href="#" title="About Me">
+          <img alt="About me" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/aboutdotme.svg" />
+          <div class="label">AboutMe</div>
+        </a>
+        <a class="linkcard" href="#" title="CV (PDF)">
+          <img alt="CV" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/academia.svg" />
+          <div class="label">CV</div>
+        </a>
+        <a class="linkcard" href="#" title="Publications">
+          <img alt="Publications" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/readthedocs.svg" />
+          <div class="label">Publications</div>
+        </a>
+        <a class="linkcard" href="#" title="Google Scholar">
+          <img alt="Google Scholar" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg" />
+          <div class="label">GoogleScholar</div>
+        </a>
+        <a class="linkcard" href="#" title="LinkedIn">
+          <img alt="LinkedIn" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" />
+          <div class="label">LinkedIn</div>
+        </a>
+        <a class="linkcard" href="#" title="GitHub">
+          <img alt="GitHub" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" />
+          <div class="label">GitHub</div>
+        </a>
+        <a class="linkcard" href="#" title="Twitter/X">
+          <img alt="Twitter" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" />
+          <div class="label">Twitter</div>
+        </a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Mahid Ahmed · Built with GitHub Pages</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
