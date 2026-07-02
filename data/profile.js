@@ -11,6 +11,6 @@ window.SITE_DATA.profile = {
   "scholar": "https://scholar.google.com/citations?user=tZBjyOcAAAAJ&hl=en",
   "researchgate": "https://www.researchgate.net/profile/Mahid-Ahmed-4",
   "github": "https://github.com/MahidAhmed",
-  "linkedin": "https://www.linkedin.com/in/mahid-ahmed",
+  "linkedin": "https://www.linkedin.com/in/mahid-ahmed-b04178182/",
   "cv": "CV_Mahid.pdf"
 };
