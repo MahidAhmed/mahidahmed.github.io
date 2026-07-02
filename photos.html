@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery — Mahid Ahmed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+
+<aside id="sidebar">
+  <div class="profile" id="side-profile"></div>
+  <nav class="nav-menu">
+    <ul id="gallery-nav">
+      <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<main id="main">
+  <section>
+    <div class="section-title">
+      <h2>Photo Gallery</h2>
+      <p>Moments from research, presentations, and life.</p>
+    </div>
+    <div id="gallery-content"></div>
+  </section>
+</main>
+
+<footer id="footer-name"></footer>
+
+<div id="lightbox">
+  <button class="lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img alt="">
+  <div class="lb-caption"></div>
+</div>
+
+<script src="data/profile.js"></script>
+<script src="data/photos.js"></script>
+<script src="js/photos.js"></script>
+</body>
+</html>

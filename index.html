@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahid Ahmed</title>
+<meta name="description" content="Mahid Ahmed — Ph.D. Student in Computer Science, University of Southern Mississippi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button id="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+
+<aside id="sidebar">
+  <div class="profile" id="side-profile"></div>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#about" class="active"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#awards"><i class="fa-solid fa-award"></i> Honors &amp; Awards</a></li>
+      <li><a href="#publications"><i class="fa-solid fa-book-open"></i> Publications</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#presentations"><i class="fa-solid fa-person-chalkboard"></i> Presentations</a></li>
+      <li><a href="#service"><i class="fa-solid fa-handshake-angle"></i> Academic Service</a></li>
+      <li><a href="#hobby"><i class="fa-solid fa-heart"></i> Hobby</a></li>
+      <li><a href="photos.html"><i class="fa-solid fa-images"></i> Photo Gallery</a></li>
+      <li><a href="CV_Mahid.pdf" id="nav-cv" target="_blank"><i class="fa-solid fa-file-pdf"></i> Resume / CV</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<main id="main">
+  <section id="about">
+    <div class="section-title"><h2>About Me</h2></div>
+    <div id="about-content"></div>
+  </section>
+
+  <section id="education">
+    <div class="section-title"><h2>Education</h2></div>
+    <div id="education-content"></div>
+  </section>
+
+  <section id="awards">
+    <div class="section-title"><h2>Honors &amp; Awards</h2></div>
+    <div id="awards-content"></div>
+  </section>
+
+  <section id="publications">
+    <div class="section-title">
+      <h2>Publications</h2>
+      <p>Research contributions across journals and conference proceedings.</p>
+    </div>
+    <div id="publications-content"></div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title"><h2>Projects</h2></div>
+    <div id="projects-content"></div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title"><h2>Experience</h2></div>
+    <div id="experience-content"></div>
+  </section>
+
+  <section id="presentations">
+    <div class="section-title"><h2>Presentations</h2></div>
+    <div id="presentations-content"></div>
+  </section>
+
+  <section id="service">
+    <div class="section-title"><h2>Academic Service</h2></div>
+    <div id="service-content"></div>
+  </section>
+
+  <section id="hobby">
+    <div class="section-title"><h2>Hobby</h2></div>
+    <div id="hobby-content"></div>
+  </section>
+</main>
+
+<footer id="footer-name"></footer>
+
+<!-- Section data: one file per section (edit via admin.html) -->
+<script src="data/profile.js"></script>
+<script src="data/about.js"></script>
+<script src="data/education.js"></script>
+<script src="data/awards.js"></script>
+<script src="data/publications.js"></script>
+<script src="data/projects.js"></script>
+<script src="data/experience.js"></script>
+<script src="data/presentations.js"></script>
+<script src="data/service.js"></script>
+<script src="data/hobby.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
